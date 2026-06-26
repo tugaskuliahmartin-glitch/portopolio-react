@@ -56,3 +56,142 @@ body {
 .nav-links a:hover {
   color: #2563eb;
 }
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+    min-height:90vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:80px 10%;
+
+    gap:60px;
+}
+
+.hero-text{
+
+    flex:1;
+
+}
+
+.greeting{
+
+    font-size:20px;
+
+    color:#2563eb;
+
+    margin-bottom:10px;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+    margin-bottom:15px;
+
+    color:#1e293b;
+
+}
+
+.hero h3{
+
+    font-size:28px;
+
+    color:#475569;
+
+    margin-bottom:25px;
+
+    line-height:1.5;
+
+}
+
+.description{
+
+    max-width:550px;
+
+    line-height:1.8;
+
+    color:#64748b;
+
+    margin-bottom:35px;
+
+}
+
+.hero-button{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.btn-primary{
+
+    padding:14px 30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-primary:hover{
+
+    background:#1d4ed8;
+
+}
+
+.btn-secondary{
+
+    padding:14px 30px;
+
+    border:2px solid #2563eb;
+
+    color:#2563eb;
+
+    border-radius:8px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.btn-secondary:hover{
+
+    background:#2563eb;
+
+    color:white;
+
+}
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:350px;
+
+    max-width:100%;
+
+}
