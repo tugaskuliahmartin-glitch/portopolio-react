@@ -1,13 +1,8 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    overflow-x:hidden;
-}
+@import "./styles/global.css";
+@import "./styles/navbar.css";
+@import "./styles/hero.css";
+@import "./styles/about.css";
+@import "./styles/skills.css";
+@import "./styles/projects.css";
+@import "./styles/contact.css";
+@import "./styles/footer.css";
