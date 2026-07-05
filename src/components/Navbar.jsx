@@ -1,21 +1,88 @@
-function Navbar() {
-  return (
-    <header className="navbar">
-      <div className="logo">
-        <h2>Martin I GL</h2>
-      </div>
+import { useEffect, useState } from "react";
+import { Link } from "react-scroll";
+import { FiMoon, FiSun } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { useTheme } from "../context/ThemeContext";
+import logo from "../assets/logo/images.jpg";
 
-      <nav>
-        <ul className="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+const Navbar = () => {
+  const { theme, toggleTheme } = useTheme();
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 40);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <motion.nav
+      className={`navbar ${scrolled ? "scrolled" : ""}`}
+      initial={{ y: -100 }}
+      animate={{ y: 0 }}
+      transition={{ duration: 0.7 }}
+    >
+      <div className="navbar-container">
+
+        <div className="logo">
+
+          <h2>Martin I GL</h2>
+
+        </div>
+
+        <ul className="nav-menu">
+
+          {["home", "about", "skills", "projects", "contact"].map((item) => (
+            <li key={item}>
+
+              <Link
+
+                to={item}
+
+                spy={true}
+
+                smooth={true}
+
+                offset={-80}
+
+                duration={700}
+
+                activeClass="active"
+
+              >
+                {item.charAt(0).toUpperCase() + item.slice(1)}
+              </Link>
+
+            </li>
+          ))}
+
         </ul>
-      </nav>
-    </header>
+
+        <div
+          className="theme-switch"
+          onClick={toggleTheme}
+        >
+
+          <FiMoon className="moon" />
+
+          <div className={`switch ${theme === "light" ? "active" : ""}`}>
+
+            <span></span>
+
+          </div>
+
+          <FiSun className="sun" />
+
+        </div>
+
+      </div>
+    </motion.nav >
   );
-}
+};
 
 export default Navbar;
