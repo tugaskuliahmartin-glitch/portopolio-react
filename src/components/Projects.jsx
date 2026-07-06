@@ -1,8 +1,8 @@
 import "../styles/projects.css";
 
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpeg";
+import project1 from "../assets/project1.png";
+import project2 from "../assets/project2.png";
+import project3 from "../assets/project3.png";
 
 import { FaGithub } from "react-icons/fa";
 import { FiExternalLink } from "react-icons/fi";
@@ -13,13 +13,13 @@ function Projects() {
 
   const projects = [
     {
-      title: "Website Donasi",
+      title: "Prototype Desain Website",
       image: project1,
       description:
-        "Website donasi berbasis HTML, CSS dan JavaScript yang memiliki halaman landing page, informasi donasi serta navigasi yang responsif.",
-      tech: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      demo: "#",
+        "Prototype desain website OrangUtanHeaven yang dibuat menggunakan gabungan dari Stitch dan Figma, yang memiliki landing page beserta informasi seputar OUH dan mempertimbanggkan UI/UX.",
+      tech: ["Stitch", "Figma", "HTML", "CSS"],
+      github: "https://stitch.withgoogle.com/projects/15389173064495516134",
+      demo: "https://stitch.withgoogle.com/preview/15389173064495516134?node-id=36a271021c23476980f9b528638e1025",
     },
 
     {
@@ -27,7 +27,7 @@ function Projects() {
       image: project2,
       description:
         "Aplikasi desktop Java menggunakan konsep Pemrograman Berorientasi Objek dengan fitur pemesanan tiket kereta api.",
-      tech: ["Java", "MySQL", "Swing"],
+      tech: ["Java", "Swing"],
       github: "#",
       demo: "#",
     },
@@ -38,8 +38,8 @@ function Projects() {
       description:
         "Portfolio pribadi yang dibangun menggunakan React, Vite dan Framer Motion dengan tampilan modern dan responsif.",
       tech: ["React", "CSS", "Framer Motion"],
-      github: "#",
-      demo: "#",
+      github: "https://github.com/tugaskuliahmartin-glitch/portopolio-react",
+      demo: "https://tugaskuliahmartin-glitch.github.io/portopolio-react/",
     },
   ];
 

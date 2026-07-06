@@ -26,7 +26,7 @@ function Contact() {
         <div className="contact-list">
 
           <a
-            href="mailto:email@email.com"
+            href="mailto:tugaskuliahmartin@gmail.com"
             className="contact-item"
           >
             <div className="contact-icon">
@@ -37,7 +37,7 @@ function Contact() {
           </a>
 
           <a
-            href="https://github.com/username"
+            href="https://github.com/tugaskuliahmartin-glitch"
             target="_blank"
             className="contact-item"
           >
@@ -61,7 +61,7 @@ function Contact() {
           </a> */}
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/martingl.vn?igsh=MTZsdnVwdjE5Nw=="
             target="_blank"
             className="contact-item"
           >

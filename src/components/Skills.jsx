@@ -9,7 +9,6 @@ import {
 } from "react-icons/fa";
 
 import {
-  // SiVisualstudiocode,
   SiMysql,
 } from "react-icons/si";
 
@@ -25,11 +24,10 @@ function Skills() {
     { icon: <FaCss3Alt color="#1572B6" />, name: "CSS3" },
     { icon: <FaJs color="#F7DF1E" />, name: "JavaScript" },
     { icon: <FaReact color="#61DAFB" />, name: "React" },
+    { icon: <FaFigma color="#F24E1E" />, name: "Figma" },
   ];
 
   const tools = [
-    // { icon: <SiVisualstudiocode color="#007ACC" />, name: "VS Code" },
-    { icon: <FaFigma color="#F24E1E" />, name: "Figma" },
     { icon: <FaGitAlt color="#F05032" />, name: "Git" },
     {
       icon: <FaGithub color={theme === "dark" ? "white" : "black"} />,
