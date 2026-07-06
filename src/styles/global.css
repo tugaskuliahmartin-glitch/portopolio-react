@@ -20,6 +20,7 @@ transition:background .35s,color .35s;
 
 overflow-x:hidden;
 
+min-height:100vh;
 }
 
 :root{
@@ -79,6 +80,10 @@ section{
 padding:100px 10%;
 
 min-height:100vh;
+
+position:relative;
+
+z-index:5;
 
 }
 
@@ -209,3 +214,4 @@ transition:.35s;
 background:var(--primary);
 
 }
+

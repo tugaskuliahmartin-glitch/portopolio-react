@@ -3,7 +3,6 @@ import { Link } from "react-scroll";
 import { FiMoon, FiSun } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext";
-import logo from "../assets/logo/images.jpg";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -31,7 +30,7 @@ const Navbar = () => {
 
         <div className="logo">
 
-          <h2>Martin I GL</h2>
+          <h2>Martin GL</h2>
 
         </div>
 
