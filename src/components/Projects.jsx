@@ -1,35 +1,137 @@
+import "../styles/projects.css";
+
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.jpg";
+import project3 from "../assets/project3.jpeg";
+
+import { FaGithub } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
+
+import { motion } from "framer-motion";
+
 function Projects() {
+
+  const projects = [
+    {
+      title: "Website Donasi",
+      image: project1,
+      description:
+        "Website donasi berbasis HTML, CSS dan JavaScript yang memiliki halaman landing page, informasi donasi serta navigasi yang responsif.",
+      tech: ["HTML", "CSS", "JavaScript"],
+      github: "#",
+      demo: "#",
+    },
+
+    {
+      title: "Program Tiket Kereta",
+      image: project2,
+      description:
+        "Aplikasi desktop Java menggunakan konsep Pemrograman Berorientasi Objek dengan fitur pemesanan tiket kereta api.",
+      tech: ["Java", "MySQL", "Swing"],
+      github: "#",
+      demo: "#",
+    },
+
+    {
+      title: "Website Portfolio",
+      image: project3,
+      description:
+        "Portfolio pribadi yang dibangun menggunakan React, Vite dan Framer Motion dengan tampilan modern dan responsif.",
+      tech: ["React", "CSS", "Framer Motion"],
+      github: "#",
+      demo: "#",
+    },
+  ];
+
   return (
-    <section className="projects" id="projects">
-      <h2>Projects</h2>
+    <section id="projects" className="projects">
 
-      <div className="projects-container">
+      <motion.h2
 
-        <div className="project-card">
-          <h3>Website Donasi</h3>
-          <p>
-            Website donasi menggunakan HTML, CSS dan JavaScript.
-          </p>
-          <button>Lihat Project</button>
-        </div>
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: .7 }}
+        viewport={{ once: true }}
 
-        <div className="project-card">
-          <h3>Pemesanan Tiket Kereta</h3>
-          <p>
-            Aplikasi Java berbasis Object Oriented Programming.
-          </p>
-          <button>Lihat Project</button>
-        </div>
+      >
+        Projects
+      </motion.h2>
 
-        <div className="project-card">
-          <h3>Portfolio React</h3>
-          <p>
-            Website portfolio pribadi menggunakan React.
-          </p>
-          <button>Lihat Project</button>
-        </div>
+      <p className="projects-subtitle">
+        Berikut beberapa project yang telah saya kerjakan selama proses belajar
+        dan pengembangan kemampuan di bidang pemrograman maupun UI/UX.
+      </p>
+
+      <div className="projects-grid">
+
+        {projects.map((project, index) => (
+
+          <motion.div
+
+            className={`project-card ${
+              index === 2 ? "project-center" : ""
+            }`}
+
+            key={index}
+
+            initial={{ opacity: 0, y: 40 }}
+
+            whileInView={{ opacity: 1, y: 0 }}
+
+            transition={{ duration: .6, delay: index * .2 }}
+
+            viewport={{ once: true }}
+
+            whileHover={{ y: -10 }}
+
+          >
+
+            <img src={project.image} alt={project.title} />
+
+            <div className="project-content">
+
+              <h3>{project.title}</h3>
+
+              <p>{project.description}</p>
+
+              <div className="tech-list">
+
+                {project.tech.map((item, i) => (
+
+                  <span key={i}>{item}</span>
+
+                ))}
+
+              </div>
+
+              <div className="project-button">
+
+                <a href={project.github}>
+
+                  <FaGithub />
+
+                  GitHub
+
+                </a>
+
+                <a href={project.demo}>
+
+                  <FiExternalLink />
+
+                  Demo
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </motion.div>
+
+        ))}
 
       </div>
+
     </section>
   );
 }
