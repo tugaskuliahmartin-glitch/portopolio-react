@@ -46,7 +46,7 @@ function Skills() {
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
       >
-        Skills
+        My Skill & Tools
       </motion.h2>
 
       <motion.p

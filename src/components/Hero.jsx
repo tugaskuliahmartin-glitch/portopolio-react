@@ -52,10 +52,6 @@ function Hero() {
             Saya merupakan salah satu mahasiswa jurusan Informatika di Universitas ST Bhinneka, yang memiliki
             ketertarikan pada pengembangan Website,
             UI/UX Design, dan hal-hal yang berbaur tentang vibe coding dan desain.
-            Saya senang mempelajari teknologi baru.
-            {/* dan membangun aplikasi yang modern,
-            responsif,
-            dan memiliki pengalaman pengguna yang baik. */}
 
           </p>
 

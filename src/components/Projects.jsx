@@ -54,7 +54,7 @@ function Projects() {
         viewport={{ once: true }}
 
       >
-        Projects
+        My Projects
       </motion.h2>
 
       <p className="projects-subtitle">

@@ -12,10 +12,10 @@ function About() {
         transition={{ duration: .8 }}
         viewport={{ once: true }}
       >
-        <h2>Tentang Saya</h2>
+        <h2>About Me</h2>
 
         <p>
-          Saya adalah mahasiswa Informatika yang memiliki minat pada
+          Saya adalah salah satu mahasiswa ST Bhinneka yang memiliki minat pada
           pengembangan website modern, UI/UX Design serta Java Programming.
           Saya percaya bahwa sebuah aplikasi yang baik tidak hanya bekerja
           dengan benar, tetapi juga memberikan pengalaman penggunaan yang
