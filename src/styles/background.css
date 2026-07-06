@@ -1,19 +1,24 @@
-.background {
+.background{
 
-    position: fixed;
-    inset: 0;
+position:fixed;
 
-    overflow: hidden;
+inset:0;
 
-    z-index: -1;
+overflow:hidden;
 
-    background:
-        linear-gradient(135deg,
-            #08121f,
-            #101b2d,
-            #16263d);
+z-index:-1;
 
-    pointer-events: none;
+pointer-events:none;
+
+background:
+linear-gradient(
+135deg,
+var(--bg),
+color-mix(in srgb, var(--bg) 85%, var(--primary)),
+var(--bg)
+);
+
+transition:background .4s ease;
 
 }
 

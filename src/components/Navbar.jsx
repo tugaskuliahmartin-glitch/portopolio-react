@@ -30,7 +30,7 @@ const Navbar = () => {
 
         <div className="logo">
 
-          <h2>Martin GL</h2>
+          <h2>GL</h2>
 
         </div>
 
@@ -67,15 +67,19 @@ const Navbar = () => {
           onClick={toggleTheme}
         >
 
-          <FiMoon className="moon" />
+          <FiMoon
+            className={`moon ${theme === "dark" ? "active" : ""}`}
+          />
 
-          <div className={`switch ${theme === "light" ? "active" : ""}`}>
-
+          <div
+            className={`switch ${theme === "light" ? "active" : ""}`}
+          >
             <span></span>
-
           </div>
 
-          <FiSun className="sun" />
+          <FiSun
+            className={`sun ${theme === "light" ? "active" : ""}`}
+          />
 
         </div>
 
