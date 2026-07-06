@@ -3,31 +3,31 @@ import "../styles/timeline.css";
 
 const pendidikan = [
     {
-        jenjang: "TK",
+        jenjang: "T K",
         sekolah: "Gaby Kids",
-        tahun: "2008 - 2010",
+        tahun: "2012 - 2013",
         posisi: "left",
     },
     {
-        jenjang: "SD",
+        jenjang: "S D",
         sekolah: "YAPERI",
-        tahun: "2010 - 2016",
+        tahun: "2013 - 2019",
         posisi: "right",
     },
     {
-        jenjang: "SMP",
+        jenjang: "S M P",
         sekolah: "Era Utama",
-        tahun: "2016 - 2019",
+        tahun: "2019 - 2022",
         posisi: "left",
     },
     {
-        jenjang: "SMK",
+        jenjang: "S M K",
         sekolah: "Bersama",
-        tahun: "2019 - 2022",
+        tahun: "2022 - 2025",
         posisi: "right",
     },
     {
-        jenjang: "Kuliah",
+        jenjang: "S 1",
         sekolah: "Universitas Satya Terra Bhinneka",
         tahun: "2025 - Sekarang",
         posisi: "left",
